@@ -7,7 +7,7 @@ $(function(){
       event.preventDefault();
   
       // get text value for the new item
-      const listItem = $('.js-shopping-list-entry').val();
+      const listItem =$('#shopping-list-entry').val();
   
   
       // clear text input so user can input a new one
@@ -46,6 +46,7 @@ $(function(){
       // go up to parent li, then find the child`.shopping-item`  and
       // toggle `.shopping-item__checked` class.
       $(this).closest('li').find('.shopping-item').toggleClass('shopping-item__checked');
+     
     });
   
   });
